@@ -1,95 +1,246 @@
 <!Doctype html>
-<html>
+<html lang="eng">
 <head>
-<title>login form</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<title>Barber site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    *{
-        box-sizing: border-box;
-    }
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        background-color: hsl(224, 50%, 10%);
-    }
-h1{
-    color: dodgerblue;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-top: 70px;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:whitesmoke;
+}
+nav{
+  background-color: darkblue;
+  padding: 25px;
+     text-align: end;
+   
+   
+
 }
 
-form{
-    background-color: whitesmoke;
+nav li {
     display: inline-block;
-    box-shadow: 4px 0 16px 6px green ;
-    border-radius: 20px;
-    height: 400px;
-    width: 300px;
-    margin-top: 200px;
-}
-label{
-    display: block;
-    margin-top: 8px;
-
-
-}
-input{
-    border: 1px solid dodgerblue;
-    border-radius: 10px;
-    padding: 9px;
-    width: 90%;
-    margin-top: 9px;
-    background-color: lightgray;
-}
-
-button{
-    width: 70%;
-  
-    margin-top: 17px;
-    background: linear-gradient(to right, rgba(0,0,255,0.7), rgba(0,0,255,1));
-    border: none;
-    color: whitesmoke;
+    background-color: white;
+    border-radius: 6px;
     padding: 6px;
-    border-radius: 8px;
-    padding: 8px;
    
 }
-button:hover{
-    background-color: red;
-    cursor: pointer;
+
+nav li a{
+    text-decoration: none;
+    margin-right: 0%;
+    color: black;
+      font-weight: bold;
+    
+   
 }
 
-a{
-    color: darkgreen;
+nav li:hover {
+    color: white;
+    background-color: red;
+    
+}
+
+section > p{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: red;
+    background-image: url(Screenshot\ 2026-04-28\ 170607.png);
+    background-size: cover;
+    margin-top: 20px;
+    padding: 200px;
+    background-repeat: no-repeat;
+  
+    
+}
+ button{
+    color: white;
+    background-color: rgb(10, 69, 219);
+    border-radius: 10px;
+    border: none;
+    padding: 9px;
+    text-align: center;
+    margin: auto;
+ }
+
+ footer{
+    background: hsl(0, 0%,0%);
+    color: white !important;
+ margin-top: 40px;
+    width: 100%;
+    position: relative;
+   
+    padding: 40px;
+ }
+
+ footer a{
+    text-align: end !important;
+    
+    color: red;
     text-decoration: none;
-}
-p{
-    float: left;
-    width: 250px;
-}
-input:focus {
     border: 1px solid green;
-    outline: none;
+    background-color: whitesmoke;
+    padding: 6px 10px;
+    border-radius: 5px;
+    
+ }
+
+
+ footer a:hover{
+    background-color: red;
+    color: white;
+    scroll-behavior: smooth;
+ }
+ .container{
+    display: flex;
+    margin-top: 7px;
+    gap: 30px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+ }
+ .container div{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 20px;
+    height:200px;
+    width: 400px;
+    position: relative;
+
+ }
+ .container div button{
+    color: white;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    
+ }
+
+ .parent{
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 10px;
+    color: red;
+    font-size: 20px;
+ font-size: 23px;
+ font-style: oblique;
+ font-weight: bolder;
+    overflow: hidden;
+
+ }
+
+
+ 
+ .parent >p{
+   
+    white-space: nowrap;
+    display: inline-block;
+   
+    animation: move 6s ease-in-out infinite 1s alternate;
+ }
+
+  @keyframes move {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(900px);
+    }
+    }
+
+
+.pp{
+    display: flex;
+    margin-bottom: 40px;
 }
+
+.pp > button{
+    width: 60%;
+    background-color: rgb(60, 230, 13);
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.pp > button:hover{
+background-color: rgb(59,210, 6);
+cursor: pointer;
+}
+.child1{
+background-image: url(download.jpg);
+
+}
+.child2{
+    background-image: url(download\ \(1\).jpg);
+    
+}
+
+.child3{
+    background-image: url(download\ \(2\).jpg);
+}
+.child4{
+    background-image: url(download\ \(4\).jpg);
+}
+
+@media (max-width: 910px){
+    section > p{
+        height: 20px;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: center;
+        color: white;
+        padding: 70px;
+        
+    }
+    .container div{
+        width: 20%;
+        height: 100px;
+        padding: 10px;
+        margin: auto;
+    }
+    button{
+        width: 50px;
+        padding: 2px;
+        white-space: nowrap;
+    }
+}
+
 </style>
 </head>
+<body>
+<nav id="up">
+<li><a href="" >Home</a></li>
+<li><a href="">contacts</a></li>
+<li><a href="">about</a></li>
+<li><a href="#k">Book Now</a></li>
+</nav>
+<div class="parent"><p>welcome to biz yangu kinyozi</p>
 
-<form>
-<h1>please login</h1>
-<label for="name">Username</label>
-<input type="text" id="int1">
-<label for="password">password</label>
-<input type="password" id="int2">
-<p>New here? <a href="create account.html" target="_self">create account</a></p>
+</div>
+<section>
+<p>welcome to Biz yangu Kinyozi</p>
+<div class="pp">
+<button id="k"><a href="index.html" style="text-decoration: none;">Click To Book</a></button>
+</div>
+</section>
+<div class="container">
+<div class="child1"><button>ksh 300</button> </diV>
+<div class="child2"><button>ksh 500</button> </div>
+<div class="child3"><button>ksh 600</button> </div>
+<div class="child4"><button>ksh 250</button> </div>
+</div>
 
-<button type="submit" id="btn">click to login</button>
-</form>
-
-
-
-
-
-
+<footer>
+<a href="#up" style="position: absolute; bottom: 7px; right: 12px;">Top</a>
+<p>call us on: 0701133855</p>
+</footer>
+</body>
 </html>

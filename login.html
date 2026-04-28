@@ -23,11 +23,11 @@ h1{
 form{
     background-color: whitesmoke;
     display: inline-block;
-    box-shadow: 4px 0 8px  green;
+    box-shadow: 4px 0 16px 6px green ;
     border-radius: 20px;
-    height: 450px;
+    height: 400px;
     width: 300px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 label{
     display: block;
@@ -39,26 +39,21 @@ input{
     border: 1px solid dodgerblue;
     border-radius: 10px;
     padding: 9px;
-    width: 80%;
+    width: 90%;
     margin-top: 9px;
     background-color: lightgray;
-    outline: none;
-   
 }
-input:hover{
-    border: 1px solid dodgerblue;
-    
-}
+
 button{
     width: 70%;
- margin-top: 10px;
-    background: linear-gradient(to right, rgba(27, 184, 98, 0.7), rgba(27, 184, 98, 0.7));
+  
+    margin-top: 17px;
+    background: linear-gradient(to right, rgba(0,0,255,0.7), rgba(0,0,255,1));
     border: none;
     color: whitesmoke;
     padding: 6px;
     border-radius: 8px;
     padding: 8px;
-    font-weight: bold;
    
 }
 button:hover{
@@ -71,25 +66,30 @@ a{
     text-decoration: none;
 }
 p{
-    display: block;
-   
-    border-bottom: 0.7px solid red;
+    float: left;
+    width: 250px;
 }
-
+input:focus {
+    border: 1px solid green;
+    outline: none;
+}
 </style>
 </head>
 
 <form>
-<h1>CREATE ACCOUNT</h1>
+<h1>please login</h1>
 <label for="name">Username</label>
-
-<input type="text" >
+<input type="text" id="int1">
 <label for="password">password</label>
-<input type="password" placeholder="&#128274">
-<label for="password">confirm password</label>
-<input type="password" placeholder="********">
-<p>Already have an account? <a href="login.html" target="_self">sign in</a></p>
+<input type="password" id="int2">
+<p>New here? <a href="create account.html" target="_self">create account</a></p>
 
-<button type="submit">click to Register</button>
+<button type="submit" id="btn">click to login</button>
 </form>
+
+
+
+
+
+
 </html>
