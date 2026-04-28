@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+<head>
+<title>login form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: hsl(224, 50%, 10%);
+    }
+h1{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+form{
+    background-color: whitesmoke;
+    display: inline-block;
+    box-shadow: 4px 0 8px  green;
+    border-radius: 20px;
+    height: 450px;
+    width: 300px;
+    margin-top: 150px;
+}
+label{
+    display: block;
+    margin-top: 8px;
+
+
+}
+input{
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    padding: 9px;
+    width: 80%;
+    margin-top: 9px;
+    background-color: lightgray;
+    outline: none;
+   
+}
+input:hover{
+    border: 1px solid dodgerblue;
+    
+}
+button{
+    width: 70%;
+ margin-top: 10px;
+    background: linear-gradient(to right, rgba(27, 184, 98, 0.7), rgba(27, 184, 98, 0.7));
+    border: none;
+    color: whitesmoke;
+    padding: 6px;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+   
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+a{
+    color: darkgreen;
+    text-decoration: none;
+}
+p{
+    display: block;
+   
+    border-bottom: 0.7px solid red;
+}
+
+</style>
+</head>
+
+<form>
+<h1>CREATE ACCOUNT</h1>
+<label for="name">Username</label>
+
+<input type="text" >
+<label for="password">password</label>
+<input type="password" placeholder="&#128274">
+<label for="password">confirm password</label>
+<input type="password" placeholder="********">
+<p>Already have an account? <a href="ll.html" target="_self">sign in</a></p>
+
+<button type="submit">click to Register</button>
+</form>
+</html>

@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+<head>
+<title>login form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: hsl(224, 50%, 10%);
+    }
+h1{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+form{
+    background-color: whitesmoke;
+    display: inline-block;
+    box-shadow: 4px 0 16px 6px green ;
+    border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    margin-top: 200px;
+}
+label{
+    display: block;
+    margin-top: 8px;
+
+
+}
+input{
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    padding: 9px;
+    width: 90%;
+    margin-top: 9px;
+    background-color: lightgray;
+}
+
+button{
+    width: 70%;
+  
+    margin-top: 17px;
+    background: linear-gradient(to right, rgba(0,0,255,0.7), rgba(0,0,255,1));
+    border: none;
+    color: whitesmoke;
+    padding: 6px;
+    border-radius: 8px;
+    padding: 8px;
+   
+}
+button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+a{
+    color: darkgreen;
+    text-decoration: none;
+}
+p{
+    float: left;
+    width: 250px;
+}
+input:focus {
+    border: 1px solid green;
+    outline: none;
+}
+</style>
+</head>
+
+<form>
+<h1>please login</h1>
+<label for="name">Username</label>
+<input type="text" id="int1">
+<label for="password">password</label>
+<input type="password" id="int2">
+<p>New here? <a href="create account.html" target="_self">create account</a></p>
+
+<button type="submit" id="btn">click to login</button>
+</form>
+
+
+
+
+
+
+</html>
